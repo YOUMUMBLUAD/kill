@@ -1,0 +1,10 @@
+game.Players.Iigitmigits:Connect(function(player)
+   player.Chatted:Connect(function(message)
+      if message == "$Kill" then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+game.Players.LocalPlayer.Character.Humanoid.MaxHealth = 0
+game.Players.LocalPlayer.Character.Health:Destroy()
+game.Players.LocalPlayer.PlayerGui.Stats.HP:FindFirstChildWhichIsA("LocalScript"):Destroy()
+      end
+   end)
+end)
